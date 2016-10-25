@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02350_ClassDiagram_Project", "02350_ClassDiagram_Project\02350_ClassDiagram_Project.csproj", "{DD7173A9-CEF2-4C4E-A61B-46F4FC4703E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{F252F59F-5706-48BC-875A-0AAC81D31D50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02350_ClassDiagram_Project.Model", "Logic\02350_ClassDiagram_Project.Model.csproj", "{F252F59F-5706-48BC-875A-0AAC81D31D50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
