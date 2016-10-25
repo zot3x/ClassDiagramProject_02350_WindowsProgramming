@@ -57,20 +57,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\Arrow Usercontrol.xaml.cs">
-      <DependentUpon>Arrow Usercontrol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Classdiagram Usercontrol.xaml.cs">
-      <DependentUpon>Classdiagram Usercontrol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Menu Usercontrol.xaml.cs">
-      <DependentUpon>Menu Usercontrol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Sidepanel Usercontrol.xaml.cs">
-      <DependentUpon>Sidepanel Usercontrol.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Classes\Behaviour\DragAndDrop.cs" />
     <Compile Include="Classes\Behaviour\PositionChange.cs" />
+    <Compile Include="View\UserControls\Arrow Usercontrol.xaml.cs">
+      <DependentUpon>Arrow Usercontrol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Classdiagram Usercontrol.xaml.cs">
+      <DependentUpon>Classdiagram Usercontrol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Menu Usercontrol.xaml.cs">
+      <DependentUpon>Menu Usercontrol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Sidepanel Usercontrol.xaml.cs">
+      <DependentUpon>Sidepanel Usercontrol.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,21 +83,21 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\Arrow Usercontrol.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="View\UserControls\Arrow Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Classdiagram Usercontrol.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="View\UserControls\Classdiagram Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Menu Usercontrol.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="View\UserControls\Menu Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Sidepanel Usercontrol.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="View\UserControls\Sidepanel Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +133,35 @@
       <Project>{f252f59f-5706-48bc-875a-0aac81d31d50}</Project>
       <Name>02350_ClassDiagram_Project.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+    <Resource Include="Images\Cancel.png" />
+    <Resource Include="Images\Check.png" />
+    <Resource Include="Images\Copy.png" />
+    <Resource Include="Images\Cut.png" />
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\Edit.png" />
+    <Resource Include="Images\Exit.png" />
+    <Resource Include="Images\Find.png" />
+    <Resource Include="Images\Help.png" />
+    <Resource Include="Images\Information.png" />
+    <Resource Include="Images\New.png" />
+    <Resource Include="Images\Open.png" />
+    <Resource Include="Images\Options.png" />
+    <Resource Include="Images\Paste.png" />
+    <Resource Include="Images\Picture.png" />
+    <Resource Include="Images\Preview.png" />
+    <Resource Include="Images\Print.png" />
+    <Resource Include="Images\Redo.png" />
+    <Resource Include="Images\Remove.png" />
+    <Resource Include="Images\Rename.png" />
+    <Resource Include="Images\Save.png" />
+    <Resource Include="Images\Search.png" />
+    <Resource Include="Images\Settings.png" />
+    <Resource Include="Images\Undo.png" />
+    <Resource Include="Images\Zoom-In.png" />
+    <Resource Include="Images\Zoom-Out.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
