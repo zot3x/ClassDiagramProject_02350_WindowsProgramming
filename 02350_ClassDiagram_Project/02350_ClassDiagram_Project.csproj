@@ -127,9 +127,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Logic\02350_ClassDiagram_Project.Model.csproj">
       <Project>{f252f59f-5706-48bc-875a-0aac81d31d50}</Project>
