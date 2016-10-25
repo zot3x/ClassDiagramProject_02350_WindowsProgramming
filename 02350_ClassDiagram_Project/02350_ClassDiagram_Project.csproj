@@ -57,16 +57,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\Arrow Usercontrol.xaml.cs">
+    <Compile Include="View\Arrow Usercontrol.xaml.cs">
       <DependentUpon>Arrow Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Classdiagram Usercontrol.xaml.cs">
+    <Compile Include="View\Classdiagram Usercontrol.xaml.cs">
       <DependentUpon>Classdiagram Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Menu Usercontrol.xaml.cs">
+    <Compile Include="View\Menu Usercontrol.xaml.cs">
       <DependentUpon>Menu Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Sidepanel Usercontrol.xaml.cs">
+    <Compile Include="View\Sidepanel Usercontrol.xaml.cs">
       <DependentUpon>Sidepanel Usercontrol.xaml</DependentUpon>
     </Compile>
     <Compile Include="Classes\Behaviour\DragAndDrop.cs" />
@@ -83,19 +83,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\Arrow Usercontrol.xaml">
+    <Page Include="View\Arrow Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Classdiagram Usercontrol.xaml">
+    <Page Include="View\Classdiagram Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Menu Usercontrol.xaml">
+    <Page Include="View\Menu Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Sidepanel Usercontrol.xaml">
+    <Page Include="View\Sidepanel Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,13 +127,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Logic\Logic.csproj">
+    <ProjectReference Include="..\Logic\02350_ClassDiagram_Project.Model.csproj">
       <Project>{f252f59f-5706-48bc-875a-0aac81d31d50}</Project>
-      <Name>Logic</Name>
+      <Name>02350_ClassDiagram_Project.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
