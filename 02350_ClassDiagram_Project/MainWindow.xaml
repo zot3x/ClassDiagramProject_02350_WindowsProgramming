@@ -6,9 +6,6 @@
         xmlns:local="clr-namespace:_02350_ClassDiagram_Project"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-        
-    <Grid Margin="-4,0,3.667,-4.333">
-        <Menu x:Name="menuBox" HorizontalAlignment="Left" Height="321" Margin="0,0,0,-0.333" VerticalAlignment="Top" Width="84"/>
 
-    </Grid>
+    <Menu x:Name="menuBox" HorizontalAlignment="Left" Width="84" VerticalContentAlignment="Top" />
 </Window>

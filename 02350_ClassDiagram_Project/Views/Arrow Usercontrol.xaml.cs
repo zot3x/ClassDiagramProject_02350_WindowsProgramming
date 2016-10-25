@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace _02350_ClassDiagram_Project.UserControl
 {
     /// <summary>
-    /// Interaction logic for Classdiagram.xaml
+    /// Interaction logic for Arrow_Usercontrol.xaml
     /// </summary>
-    public partial class Classdiagram : UserControl
+    public partial class Arrow_Usercontrol
     {
-        public Classdiagram()
+        public Arrow_Usercontrol()
         {
             InitializeComponent();
         }

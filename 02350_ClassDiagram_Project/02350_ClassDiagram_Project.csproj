@@ -57,20 +57,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserControl\Arrow Usercontrol.xaml.cs">
+    <Compile Include="Views\Arrow Usercontrol.xaml.cs">
       <DependentUpon>Arrow Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Classdiagram Usercontrol.xaml.cs">
+    <Compile Include="Views\Classdiagram Usercontrol.xaml.cs">
       <DependentUpon>Classdiagram Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Menu Usercontrol.xaml.cs">
+    <Compile Include="Views\Menu Usercontrol.xaml.cs">
       <DependentUpon>Menu Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Sidepanel Usercontrol.xaml.cs">
+    <Compile Include="Views\Sidepanel Usercontrol.xaml.cs">
       <DependentUpon>Sidepanel Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Behaviour\DragAndDrop.cs" />
-    <Compile Include="View\Behaviour\PositionChange.cs" />
+    <Compile Include="Classes\Behaviour\DragAndDrop.cs" />
+    <Compile Include="Classes\Behaviour\PositionChange.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,19 +83,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControl\Arrow Usercontrol.xaml">
+    <Page Include="Views\Arrow Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\Classdiagram Usercontrol.xaml">
+    <Page Include="Views\Classdiagram Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\Menu Usercontrol.xaml">
+    <Page Include="Views\Menu Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\Sidepanel Usercontrol.xaml">
+    <Page Include="Views\Sidepanel Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,7 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="UndoRedo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{f252f59f-5706-48bc-875a-0aac81d31d50}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
