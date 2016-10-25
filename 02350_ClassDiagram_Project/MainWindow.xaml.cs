@@ -23,10 +23,29 @@ namespace _02350_ClassDiagram_Project
         public MainWindow()
         {
             InitializeComponent();
+            new Core(VisualGraph).DrawTest();
 
+        }
+    }
 
+    class Core
+    {
+        private Canvas canvas;
+        
+        public Core(Canvas canvas)
+        {
+            this.canvas = canvas;
+        }
 
-            // Test
+        public void DrawTest()
+        {
+            Ellipse ellipse = new Ellipse();
+            ellipse.Fill = Brushes.Red;
+            ellipse.Width = 20;
+            ellipse.Height = 20;
+            ellipse.SetValue(Canvas.TopProperty, 20d);
+            ellipse.SetValue(Canvas.LeftProperty, 20d);
+            this.canvas.Children.Add(ellipse);
         }
     }
 }
