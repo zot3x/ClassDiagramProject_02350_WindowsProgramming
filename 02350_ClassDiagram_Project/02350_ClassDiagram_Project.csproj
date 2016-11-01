@@ -71,6 +71,9 @@
     <Compile Include="View\UserControls\Sidepanel Usercontrol.xaml.cs">
       <DependentUpon>Sidepanel Usercontrol.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UserControls\Square Usercontrol.xaml.cs">
+      <DependentUpon>Square Usercontrol.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -98,6 +101,10 @@
     <Page Include="View\UserControls\Sidepanel Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControls\Square Usercontrol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
