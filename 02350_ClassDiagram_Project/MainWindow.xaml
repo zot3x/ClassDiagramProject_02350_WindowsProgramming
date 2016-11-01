@@ -44,7 +44,7 @@
         </DockPanel>
 
 
-        <Canvas x:Name="VisualGraph" HorizontalAlignment="Stretch" Margin="0,20,0,0" VerticalAlignment="Stretch" Background="#AAAAAA"/>
+        <Canvas x:Name="VisualGraph" HorizontalAlignment="Stretch" Margin="0,20,0,0" VerticalAlignment="Stretch" Background="#FFFFFF"/>
         <Menu x:Name="menuBox" HorizontalAlignment="Left" Width="149" VerticalContentAlignment="Top" Margin="0,20,0,0" />
 
     </Grid>
