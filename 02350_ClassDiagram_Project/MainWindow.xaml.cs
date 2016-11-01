@@ -26,6 +26,11 @@ namespace _02350_ClassDiagram_Project
             new Core(VisualGraph).DrawTest();
 
         }
+
+        private void Arrow_Usercontrol_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
     class Core
