@@ -18,19 +18,24 @@
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
         <DockPanel x:Name="docPanelMain" LastChildFill="False">
-            <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top">
-                <MenuItem x:Name="file" Header="Files"/>
+            <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top" Background="#FF6278C3">
+                <MenuItem x:Name="file" Header="Files">
+                    <Button x:Name="New" Content="Button" Width="75"/>
+                    <Button x:Name="button1" Content="Button" Width="75"/>
+                    <Button x:Name="button2" Content="Button" Width="75"/>
+                    <Button x:Name="button3" Content="Button" Width="75"/>
+                    <Button x:Name="button4" Content="Button" Width="75"/>
+                </MenuItem>
                 <MenuItem x:Name="new" Header="New"/>
                 <MenuItem x:Name="open" Header="Open"/>
                 <MenuItem x:Name="edit" Header="Save"/>
                 <MenuItem x:Name="view" Header="Save As"/>
+                <Image x:Name="image" Height="21" Width="25"/>
+                <Image x:Name="image_Copy" Height="21" Width="25" RenderTransformOrigin="1,0.952"/>
 
                 <!-- skal vi have det??-->
-                <MenuItem x:Name="minimum" Header="-"/>
                 <!-- skal vi have det??-->
-                <MenuItem x:Name="maximum" Header="O"/>
                 <!-- skal vi have det??-->
-                <MenuItem x:Name="close" Header="X"/>
                 <!-- skal vi have det??-->
 
 
