@@ -6,47 +6,60 @@
         xmlns:local="clr-namespace:_02350_ClassDiagram_Project"
         xmlns:UserControl="clr-namespace:_02350_ClassDiagram_Project.UserControl" x:Class="_02350_ClassDiagram_Project.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="768" Width="1024">
     <Window.Resources>
         <Style x:Key="MediaElementStyle1" TargetType="{x:Type MediaElement}"/>
     </Window.Resources>
 
+    <DockPanel x:Name="docPanelMain" LastChildFill="True">
+        <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top" Background="#FF6278C3">
+            <MenuItem x:Name="file" Header="Files">
+                <Button x:Name="New" Content="Button" Width="75"/>
+                <Button x:Name="button1" Content="Button" Width="75"/>
+                <Button x:Name="button2" Content="Button" Width="75"/>
+                <Button x:Name="button3" Content="Button" Width="75"/>
+                <Button x:Name="button4" Content="Button" Width="75"/>
+            </MenuItem>
+            <MenuItem x:Name="new" Header="New"/>
+            <MenuItem x:Name="open" Header="Open"/>
+            <MenuItem x:Name="edit" Header="Save"/>
+            <MenuItem x:Name="view" Header="Save As"/>
+            <Image x:Name="image" Height="21" Width="25"/>
+            <Image x:Name="image_Copy" Height="21" Width="25" RenderTransformOrigin="1,0.952"/>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="0*"/>
-        </Grid.RowDefinitions>
-        <DockPanel x:Name="docPanelMain" LastChildFill="False">
-            <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top" Background="#FF6278C3">
-                <MenuItem x:Name="file" Header="Files">
-                    <Button x:Name="New" Content="Button" Width="75"/>
-                    <Button x:Name="button1" Content="Button" Width="75"/>
-                    <Button x:Name="button2" Content="Button" Width="75"/>
-                    <Button x:Name="button3" Content="Button" Width="75"/>
-                    <Button x:Name="button4" Content="Button" Width="75"/>
-                </MenuItem>
-                <MenuItem x:Name="new" Header="New"/>
-                <MenuItem x:Name="open" Header="Open"/>
-                <MenuItem x:Name="edit" Header="Save"/>
-                <MenuItem x:Name="view" Header="Save As"/>
-                <Image x:Name="image" Height="21" Width="25"/>
-                <Image x:Name="image_Copy" Height="21" Width="25" RenderTransformOrigin="1,0.952"/>
+            <!-- skal vi have det??-->
 
-                <!-- skal vi have det??-->
-                <!-- skal vi have det??-->
-                <!-- skal vi have det??-->
-                <!-- skal vi have det??-->
+            <!-- skal vi have det??-->
+
+            <!-- skal vi have det??-->
+
+            <!-- skal vi have det??-->
 
 
 
-            </Menu>
+        </Menu>
 
-        </DockPanel>
+        <Menu x:Name="menuBox" HorizontalAlignment="Left" Width="170" VerticalContentAlignment="Top" />
+        <Grid RenderTransformOrigin="1.001,0.502">
+            <Grid.Background>
+                <VisualBrush TileMode="Tile"
+                             Viewport="0,0,40,40" ViewportUnits="Absolute" 
+                             Viewbox="0,0,40,40" ViewboxUnits="Absolute">
+                    <VisualBrush.Visual>
+                        <Rectangle Stroke="Black" StrokeThickness="0.05" Height="40" Width="40"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Grid.Background>
+            <Grid.LayoutTransform>
+                <ScaleTransform CenterX="0" CenterY="0" ScaleX="{Binding ElementName=zoomSlider, Path=Value}" ScaleY="{Binding ElementName=zoomSlider, Path=Value}"/>
+            </Grid.LayoutTransform>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
 
+        </Grid>
 
-        <Canvas x:Name="VisualGraph" HorizontalAlignment="Stretch" Margin="0,20,0,0" VerticalAlignment="Stretch" Background="#FFFFFF"/>
-        <Menu x:Name="menuBox" HorizontalAlignment="Left" Width="149" VerticalContentAlignment="Top" Margin="0,20,0,0" />
+    </DockPanel>
 
-    </Grid>
 </Window>
