@@ -59,6 +59,9 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Behaviour\DragAndDrop.cs" />
     <Compile Include="Classes\Behaviour\PositionChange.cs" />
+    <Compile Include="View\UserControls\MenuBarUseController.xaml.cs">
+      <DependentUpon>MenuBarUseController.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\UserControls\Sidepanel_Usercontrol.xaml.cs">
       <DependentUpon>Sidepanel_Usercontrol.xaml</DependentUpon>
     </Compile>
@@ -77,6 +80,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\UserControls\MenuBarUseController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\UserControls\Sidepanel_Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
