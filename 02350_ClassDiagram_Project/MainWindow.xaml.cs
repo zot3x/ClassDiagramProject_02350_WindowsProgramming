@@ -23,7 +23,7 @@ namespace _02350_ClassDiagram_Project
         public MainWindow()
         {
             InitializeComponent();
-            new Core(VisualGraph).DrawTest();
+            
 
         }
 
