@@ -7,30 +7,24 @@
         xmlns:UserControl="clr-namespace:_02350_ClassDiagram_Project.UserControl" x:Class="_02350_ClassDiagram_Project.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="768" Width="1024">
-        
+
     <Window.Resources>
         <Style x:Key="MediaElementStyle1" TargetType="{x:Type MediaElement}"/>
     </Window.Resources>
 
     <DockPanel x:Name="docPanelMain" LastChildFill="True">
 
-        <UserControl:Sidepanel_Usercontrol>
-            
-        </UserControl:Sidepanel_Usercontrol>
+        <UserControl:Sidepanel_Usercontrol/>
         <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top" Background="#FF6278C3">
             <MenuItem x:Name="file" Header="Files">
-                <Button x:Name="New" Content="Button" Width="75"/>
-                <Button x:Name="button1" Content="Button" Width="75"/>
-                <Button x:Name="button2" Content="Button" Width="75"/>
-                <Button x:Name="button3" Content="Button" Width="75"/>
-                <Button x:Name="button4" Content="Button" Width="75"/>
+                <Button x:Name="New" Content="New" Width="75" Click="New_Click"/>
+                <Button x:Name="open" Content="Open" Width="75"/>
+                <Button x:Name="save" Content="Save" Width="75"/>
+                <Button x:Name="saveAs" Content="Save As" Width="75"/>
+                <Button x:Name="close" Content="Close" Width="75"/>
             </MenuItem>
-            <MenuItem x:Name="new" Header="New"/>
-            <MenuItem x:Name="open" Header="Open"/>
-            <MenuItem x:Name="edit" Header="Save"/>
-            <MenuItem x:Name="view" Header="Save As"/>
-            <Image x:Name="image" Height="21" Width="25"/>
-            <Image x:Name="image_Copy" Height="21" Width="25" RenderTransformOrigin="1,0.952"/>
+            <Image x:Name="undo" Height="21" Width="25" Source="Images/Undo.png"/>
+            <Image x:Name="redo" Height="21" Width="25" RenderTransformOrigin="1,0.952" Source="Images/Redo.png"/>
 
             <!-- skal vi have det??-->
 
@@ -43,7 +37,7 @@
 
 
         </Menu>
-        
+
 
         <Grid RenderTransformOrigin="1.001,0.502">
             <Grid.Background>
@@ -66,6 +60,6 @@
         </Grid>
 
     </DockPanel>
-    
+
 
 </Window>
