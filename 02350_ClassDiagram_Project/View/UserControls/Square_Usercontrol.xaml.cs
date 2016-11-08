@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _02350_ClassDiagram_Project.View.UserControls
+namespace _02350_ClassDiagram_Project.UserControls
 {
     /// <summary>
     /// Interaction logic for Square_Usercontrol.xaml

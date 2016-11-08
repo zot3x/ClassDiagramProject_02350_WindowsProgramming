@@ -7,11 +7,16 @@
         xmlns:UserControl="clr-namespace:_02350_ClassDiagram_Project.UserControl" x:Class="_02350_ClassDiagram_Project.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="768" Width="1024">
+        
     <Window.Resources>
         <Style x:Key="MediaElementStyle1" TargetType="{x:Type MediaElement}"/>
     </Window.Resources>
 
     <DockPanel x:Name="docPanelMain" LastChildFill="True">
+
+        <UserControl:Sidepanel_Usercontrol>
+            
+        </UserControl:Sidepanel_Usercontrol>
         <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top" Background="#FF6278C3">
             <MenuItem x:Name="file" Header="Files">
                 <Button x:Name="New" Content="Button" Width="75"/>
@@ -38,8 +43,8 @@
 
 
         </Menu>
+        
 
-        <Menu x:Name="menuBox" HorizontalAlignment="Left" Width="170" VerticalContentAlignment="Top" />
         <Grid RenderTransformOrigin="1.001,0.502">
             <Grid.Background>
                 <VisualBrush TileMode="Tile"
@@ -61,5 +66,6 @@
         </Grid>
 
     </DockPanel>
+    
 
 </Window>

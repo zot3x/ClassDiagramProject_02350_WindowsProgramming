@@ -1,0 +1,22 @@
+﻿<UserControl x:Name="SidePanelUsercontrol"
+             x:Class="_02350_ClassDiagram_Project.UserControl.Sidepanel_Usercontrol"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_02350_ClassDiagram_Project.UserControl"
+             mc:Ignorable="d" d:DesignWidth="298" Height="223" Foreground="#FF000A00" IsEnabled="False">
+    <Expander x:Name="SidePanelexpander" Header="" Margin="10" ExpandDirection="Left" IsExpanded="True" Foreground="{x:Null}">
+        <StackPanel Margin="0,10,0,8" Width="252">
+            <Expander x:Name="expanderShape" Height="111" IsEnabled="False" Margin="10,0" ExpandDirection="Down" >
+                <GroupBox Header="Shapes" Height="99"  Background="#FF765555">
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="46" Margin="10,0,0,0" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.33,0.48">
+                        <Image.OpacityMask>
+                            <ImageBrush ImageSource="/02350_ClassDiagram_Project;component/Images/klassediagram.png"/>
+                        </Image.OpacityMask>
+                    </Image>
+                </GroupBox>
+            </Expander>
+        </StackPanel>
+    </Expander>
+</UserControl>

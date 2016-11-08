@@ -59,20 +59,11 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Behaviour\DragAndDrop.cs" />
     <Compile Include="Classes\Behaviour\PositionChange.cs" />
-    <Compile Include="View\UserControls\Arrow Usercontrol.xaml.cs">
-      <DependentUpon>Arrow Usercontrol.xaml</DependentUpon>
+    <Compile Include="View\UserControls\Sidepanel_Usercontrol.xaml.cs">
+      <DependentUpon>Sidepanel_Usercontrol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\UserControls\Classdiagram Usercontrol.xaml.cs">
-      <DependentUpon>Classdiagram Usercontrol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\UserControls\Menu Usercontrol.xaml.cs">
-      <DependentUpon>Menu Usercontrol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\UserControls\Sidepanel Usercontrol.xaml.cs">
-      <DependentUpon>Sidepanel Usercontrol.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\UserControls\Square Usercontrol.xaml.cs">
-      <DependentUpon>Square Usercontrol.xaml</DependentUpon>
+    <Compile Include="View\UserControls\Square_Usercontrol.xaml.cs">
+      <DependentUpon>Square_Usercontrol.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -86,23 +77,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\UserControls\Arrow Usercontrol.xaml">
+    <Page Include="View\UserControls\Sidepanel_Usercontrol.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\UserControls\Classdiagram Usercontrol.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\UserControls\Menu Usercontrol.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\UserControls\Sidepanel Usercontrol.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="View\UserControls\Square Usercontrol.xaml">
+    <Page Include="View\UserControls\Square_Usercontrol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,7 +113,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\klassediagram.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Logic\02350_ClassDiagram_Project.Model.csproj">
       <Project>{f252f59f-5706-48bc-875a-0aac81d31d50}</Project>
