@@ -16,11 +16,14 @@ namespace _02350_ClassDiagram_Project.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         public MainViewModel()
         {
+
+            MainWindow main = new MainWindow();
             ////if (IsInDesignMode)
             ////{
             ////    // Code runs in Blend --> create design time data.
