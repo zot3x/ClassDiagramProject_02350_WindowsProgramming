@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _02350_ClassDiagram_Project.UserControl
+namespace _02350_ClassDiagram_Project.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for Classdiagram.xaml
+    /// Interaction logic for AddArrowUserControl.xaml
     /// </summary>
-    public partial class Classdiagram
+    public partial class AddArrowUserControl : UserControl
     {
-        public Classdiagram()
+        public AddArrowUserControl()
         {
             InitializeComponent();
         }
