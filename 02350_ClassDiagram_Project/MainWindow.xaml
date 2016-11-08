@@ -14,10 +14,8 @@
 
     <DockPanel x:Name="docPanelMain" LastChildFill="True">
 
-        <UserControl:Sidepanel_Usercontrol/>
         <Menu x:Name="menuBar" Height="21" DockPanel.Dock="Top" Background="#FF6278C3">
             <MenuItem x:Name="file" Header="Files">
-                <Button x:Name="New" Content="New" Width="75" Click="New_Click"/>
                 <Button x:Name="open" Content="Open" Width="75"/>
                 <Button x:Name="save" Content="Save" Width="75"/>
                 <Button x:Name="saveAs" Content="Save As" Width="75"/>
@@ -25,17 +23,6 @@
             </MenuItem>
             <Image x:Name="undo" Height="21" Width="25" Source="Images/Undo.png"/>
             <Image x:Name="redo" Height="21" Width="25" RenderTransformOrigin="1,0.952" Source="Images/Redo.png"/>
-
-            <!-- skal vi have det??-->
-
-            <!-- skal vi have det??-->
-
-            <!-- skal vi have det??-->
-
-            <!-- skal vi have det??-->
-
-
-
         </Menu>
 
 
