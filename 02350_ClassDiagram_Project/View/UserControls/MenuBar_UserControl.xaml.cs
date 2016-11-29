@@ -18,7 +18,7 @@ namespace _02350_ClassDiagram_Project.View.UserControls
     /// <summary>
     /// Interaction logic for MenuBar_UserControl.xaml
     /// </summary>
-    public partial class MenuBar_UserControl : UserControl
+    public partial class MenuBar_UserControl
     {
         public MenuBar_UserControl()
         {
